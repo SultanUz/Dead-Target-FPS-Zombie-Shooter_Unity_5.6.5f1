@@ -1,0 +1,126 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public class LevelLocked : MonoBehaviour
+{
+		AudioSource audioS;
+		Button Level2;
+		Button Level3;
+		Button Level4;
+		Button Level5;
+		Button Level6;
+		Button Level7;
+		Button Level8;
+		Button Level9;
+		Button Level10;
+		Button Level11;
+		Button Level12;
+		Button Level13;
+		Button Level14;
+		Button Level15;
+		Button Level16;
+		Button Level17;
+		Button Level18;
+		int counter;
+
+		public void LoadLevel (int level)
+		{
+				Admob.intertialshow = true;
+				audioS.PlayOneShot (audioS.clip);
+				StartCoroutine (Load (level));
+		}
+
+		IEnumerator Load (int level)
+		{
+				#if UNITY_ANDROID
+				Handheld.SetActivityIndicatorStyle (AndroidActivityIndicatorStyle.Large);
+				#endif
+				Handheld.StartActivityIndicator ();
+				yield return new WaitForSeconds (.5F);
+				Application.LoadLevel ("Round " + level);
+		}
+
+		void Start ()
+		{
+
+				audioS = GetComponent<AudioSource> ();
+				counter = 0;
+				Time.timeScale = 1;
+				Level2 = GameObject.Find ("2").GetComponent<Button> ();
+				Level3 = GameObject.Find ("3").GetComponent<Button> ();
+				Level4 = GameObject.Find ("4").GetComponent<Button> ();
+				Level5 = GameObject.Find ("5").GetComponent<Button> ();
+				Level6 = GameObject.Find ("6").GetComponent<Button> ();
+				Level7 = GameObject.Find ("7").GetComponent<Button> ();
+				Level8 = GameObject.Find ("8").GetComponent<Button> ();
+				Level9 = GameObject.Find ("9").GetComponent<Button> ();
+				Level10 = GameObject.Find ("10").GetComponent<Button> ();
+				Level11 = GameObject.Find ("11").GetComponent<Button> ();
+				Level12 = GameObject.Find ("12").GetComponent<Button> ();
+				Level13 = GameObject.Find ("13").GetComponent<Button> ();
+				Level14 = GameObject.Find ("14").GetComponent<Button> ();
+				Level15 = GameObject.Find ("15").GetComponent<Button> ();
+				Level16 = GameObject.Find ("16").GetComponent<Button> ();
+				Level17 = GameObject.Find ("17").GetComponent<Button> ();
+				Level18 = GameObject.Find ("18").GetComponent<Button> ();
+		}
+
+		void Update ()
+		{
+				if (Input.GetKeyDown (KeyCode.Escape)) {
+						Application.LoadLevel (Application.loadedLevel - 1);
+				}
+				if (PlayerPrefs.GetInt ("Round 1") == 1) {
+						Level2.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("Round 2") == 1) {
+						Level3.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("Round 3") == 1) {
+						Level4.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("Round 4") == 1) {
+						Level5.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("Round 5") == 1) {
+						Level6.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("Round 6") == 1) {
+						Level7.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("7") == 1) {
+						Level8.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("8") == 1) {
+						Level9.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("9") == 1) {
+						Level10.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("10") == 1) {
+						Level11.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("11") == 1) {
+						Level12.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("12") == 1) {
+						Level13.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("13") == 1) {
+						Level14.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("14") == 1) {
+						Level15.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("15") == 1) {
+						Level16.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("16") == 1) {
+						Level17.interactable = true;
+				}
+				if (PlayerPrefs.GetInt ("17") == 1) {
+						Level18.interactable = true;
+				}
+		}
+}

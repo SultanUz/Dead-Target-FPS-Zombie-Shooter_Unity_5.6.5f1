@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameScript\Timer.cs">
+    <Files>
+      <File FileName="Assets\GameEnvirment\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\FPSInputController.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameScript\Timer.cs" Line="46" Column="49" />
+      <File FileName="Assets\GameScript\StartScene.cs" Line="39" Column="7" />
+      <File FileName="Assets\GameEnvirment\AdvancedSniperStarterKit\AdvancedBullet\Scripts\Core\AS_Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\Ad_Scripts\AdInitialization.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameScript\LevelLocked.cs" Line="31" Column="5" />
+      <File FileName="Assets\Ad_Scripts\AdsManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Ad_Scripts\AdShow.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\Heyzap\HZBannerAd.cs" Line="1" Column="1" />
+      <File FileName="Assets\StartAppBackPlugin.cs" Line="1" Column="1" />
+      <File FileName="Assets\StartAppWrapper.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameScript\PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameEnvirment\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\GunHanddle.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameEnvirment\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\HowTo.cs" Line="12" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

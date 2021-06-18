@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{C03C0BFA-D02B-E097-B1B1-F3DB1EDB9D54}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\AppTrackerAndroid\AppTrackerAndroid.cs" />
+     <Compile Include="Assets\Plugins\HZIncentivizedAd.cs" />
+     <Compile Include="Assets\Plugins\HZInterstitialAd.cs" />
+     <Compile Include="Assets\Plugins\HZVideoAd.cs" />
+     <Compile Include="Assets\Plugins\HeyzapAds.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisement.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Misc\AsyncExec.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Misc\MiniJSON.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Misc\Utils.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\ShowOptionsExtended.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAds.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsAndroid.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsEditor.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsEditorPlaceholder.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsExternal.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsIos.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsIosBridge.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsPlatform.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\ShowOptions.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\ShowResult.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Sources\Scripts\Water.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\Displace.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\GerstnerDisplace.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\MeshContainer.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\PlanarReflection.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\SpecularLighting.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\WaterBase.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\WaterTile.cs" />
+     <None Include="Assets\Plugins\Android\res\values-sv\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_play.xml" />
+     <None Include="Assets\Plugins\Android\res\values-es\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\color\common_signin_btn_text_dark.xml" />
+     <None Include="Assets\Plugins\Android\unityads\proguard-project.txt" />
+     <None Include="Assets\Plugins\Android\res\values-it\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rTW\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ca\auth_strings.xml" />
+     <None Include="Assets\GameEnvirment\AdvancedSniperStarterKit\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\Plugins\Android\res\values-sw\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-it\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\wallet_colors.xml" />
+     <None Include="Assets\Plugins\Android\unityads\build.xml" />
+     <None Include="Assets\Plugins\Android\res\color\wallet_secondary_text_holo_dark.xml" />
+     <None Include="Assets\Plugins\Android\res\values-uk\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rCN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ms-rMY\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pt-rPT\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ka-rGE\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fi\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-vi\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-es\wallet_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-el\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ar\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-vi\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sr\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hr\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_audio_toggle.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pt-rBR\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-cs\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rCN\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pl\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-mn-rMN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ru\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pt-rBR\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-bg\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ka-rGE\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fr\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-da\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-km-rKH\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-uk\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pt\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hy-rAM\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sl\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\admob_ads_attrs.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sv\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fa\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-in\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-tl\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-nb\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\proguard.txt" />
+     <None Include="Assets\Plugins\Android\res\values-en-rGB\auth_strings.xml" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
+     <None Include="Assets\Plugins\Android\res\values\common_colors.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pt\auth_strings.xml" />
+     <None Include="Assets\GameEnvirment\Moody Transporter\Models\Damaged_old_car\readme.txt" />
+     <None Include="Assets\Plugins\Android\res\values-el\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rTW\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\color\common_signin_btn_text_light.xml" />
+     <None Include="Assets\Plugins\Android\res\values-lv\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-et-rEE\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sw\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-tl\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ja\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sk\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fr-rCA\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\wallet_attrs.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ko\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-en-rIN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_background_button_pause.xml" />
+     <None Include="Assets\Plugins\Android\res\values\wallet_styles.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\common_signin_btn_icon_light.xml" />
+     <None Include="Assets\Plugins\Android\res\values-cs\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-be\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-tr\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hr\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\maps_attrs.xml" />
+     <None Include="Assets\Plugins\Android\res\values-tr\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pt-rPT\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ru\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-de\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\README.txt" />
+     <None Include="Assets\Plugins\Android\res\values-af\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\version.xml" />
+     <None Include="Assets\Plugins\Android\res\values-am\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fa\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-de\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-km-rKH\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-nl\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-th\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_triangle.xml" />
+     <None Include="Assets\Plugins\Android\res\values-nb\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-es\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\values\strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-th\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-in\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fr\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ca\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_waves.xml" />
+     <None Include="Assets\Plugins\Android\res\values-es-rUS\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-mn-rMN\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-en-rGB\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-lt\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fr-rCA\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_base.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pl\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-es-rUS\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Plugins\Android\res\values-fi\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ms-rMY\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-be\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-af\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\color\wallet_primary_text_holo_light.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hu\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\common_signin_btn_text_dark.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_play.xml" />
+     <None Include="Assets\Plugins\Android\res\values\wallet_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\common_signin_btn_icon_dark.xml" />
+     <None Include="Assets\Plugins\Android\res\values-lt\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sl\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-en-rIN\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-lv\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ro\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hi\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hu\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-da\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zu\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sr\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ja\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sk\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-iw\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-nl\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-lo-rLA\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-bg\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ro\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ko\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hi\auth_strings.xml" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_pause.xml" />
+     <None Include="Assets\Plugins\Android\res\values-et-rEE\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rHK\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_paused.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ar\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-iw\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\admob_iap_style.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rHK\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-am\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hy-rAM\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zu\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\res\values-lo-rLA\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\common_signin_btn_text_light.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

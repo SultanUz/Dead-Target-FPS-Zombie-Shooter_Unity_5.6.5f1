@@ -1,0 +1,111 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.IO;
+using StartApp;
+using UnityEngine.Advertisements;
+
+public class StartScene : MonoBehaviour
+{
+		public GameObject admobInt;
+		bool escape;
+		GameObject exit;
+		AudioSource audioS;
+		public static bool PlayAD = true;
+
+		void Awake ()
+		{
+				exit = GameObject.Find ("Exit");
+				exit.gameObject.SetActive (false);
+				StartAppWrapper.init ();
+				StartAppWrapper.loadAd ();
+				Advertisement.Initialize ("113183", false);
+		
+		}
+
+		void Update ()
+		{
+				if (PlayAD == true) {
+						if (Advertisement.IsReady ()) {
+								Advertisement.Show ();
+								PlayAD = false;
+						}
+				}
+				if (Input.GetKeyDown (KeyCode.Escape)) {
+						StartAppWrapper.showAd ();
+						StartAppWrapper.loadAd ();
+						escape = !escape;
+				}
+				if (escape) {
+						exit.gameObject.SetActive (true);
+				} else
+						exit.gameObject.SetActive (false);
+		}
+
+		public void Play ()
+		{
+				audioS.PlayOneShot (audioS.clip);
+				Application.LoadLevel (1);
+		}
+
+		public void Rate ()
+		{
+				audioS.PlayOneShot (audioS.clip);
+				Application.OpenURL ("https://play.google.com/store/apps/details?id=com.asg.zombieshooting3d.game.free");
+		}
+
+		public void More ()
+		{
+				audioS.PlayOneShot (audioS.clip);
+				Application.OpenURL ("https://play.google.com/store/apps/developer?id=Action+Simulator+Games");
+		}
+
+		public void Setting ()
+		{
+				audioS.PlayOneShot (audioS.clip);
+		}
+
+		public void Yes ()
+		{
+				audioS.PlayOneShot (audioS.clip);
+				Application.Quit ();
+		}
+
+		public void No ()
+		{
+				escape = !escape;
+				audioS.PlayOneShot (audioS.clip);
+
+
+		}
+
+		void Start ()
+		{
+				Time.timeScale = 1;
+				audioS = GetComponent<AudioSource> ();
+		}
+
+		public void dino ()
+		{
+				Application.OpenURL ("https://play.google.com/store/apps/details?id=com.asg.dinohunting3d.survival.game.free");
+		}
+
+		public void huntingclass ()
+		{
+				Application.OpenURL ("https://play.google.com/store/apps/details?id=com.asg.wildanimals.hunter.jungle.shooting.free");
+		}
+
+		public void cargo ()
+		{
+				Application.OpenURL ("https://play.google.com/store/apps/details?id=com.asg.millitary.hillclimb.trucktransport.freegame");
+		}
+
+		public void fb ()
+		{
+				Application.OpenURL ("https://www.facebook.com/asg.officalpage");
+		}
+
+		public void twi ()
+		{
+				Application.OpenURL ("https://twitter.com/asg_offical");
+		}
+}

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dead Zombie Killer", "Assembly-CSharp-firstpass.csproj", "{6059AC72-95A1-834C-FF9C-F2BB3E4CB161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dead Zombie Killer", "Assembly-CSharp.csproj", "{2012D070-472A-B537-2EC7-FA3E6A9126BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dead Zombie Killer", "Assembly-CSharp-Editor.csproj", "{C30CED16-7F77-67B9-72A2-4BDA48F0492E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6059AC72-95A1-834C-FF9C-F2BB3E4CB161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6059AC72-95A1-834C-FF9C-F2BB3E4CB161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6059AC72-95A1-834C-FF9C-F2BB3E4CB161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6059AC72-95A1-834C-FF9C-F2BB3E4CB161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2012D070-472A-B537-2EC7-FA3E6A9126BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2012D070-472A-B537-2EC7-FA3E6A9126BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2012D070-472A-B537-2EC7-FA3E6A9126BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2012D070-472A-B537-2EC7-FA3E6A9126BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C30CED16-7F77-67B9-72A2-4BDA48F0492E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C30CED16-7F77-67B9-72A2-4BDA48F0492E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C30CED16-7F77-67B9-72A2-4BDA48F0492E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C30CED16-7F77-67B9-72A2-4BDA48F0492E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

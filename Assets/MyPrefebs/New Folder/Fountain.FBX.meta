@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 994d4f92e45edd0449309a91ea0d13da
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bobble001
+    100002: Bobble002
+    100004: Bobble004
+    100006: Bobble005
+    100008: Bobble006
+    100010: Bobble007
+    100012: Bobble008
+    100014: Bobble009
+    100016: Bobble010
+    100018: Bobble011
+    100020: Bobble012
+    100022: Bobble013
+    100024: Bobble014
+    100026: Bobble015
+    100028: Bobble016
+    100030: Bobble017
+    100032: Brace
+    100034: Brace001
+    100036: //RootNode
+    100038: Fountain Base
+    100040: Fountain Cloth
+    100042: FruFra
+    100044: FruFra001
+    100046: Leaf
+    100048: Leaf001
+    100050: Leaf002
+    100052: Leaf003
+    100054: Leaf004
+    400000: Bobble001
+    400002: Bobble002
+    400004: Bobble004
+    400006: Bobble005
+    400008: Bobble006
+    400010: Bobble007
+    400012: Bobble008
+    400014: Bobble009
+    400016: Bobble010
+    400018: Bobble011
+    400020: Bobble012
+    400022: Bobble013
+    400024: Bobble014
+    400026: Bobble015
+    400028: Bobble016
+    400030: Bobble017
+    400032: Brace
+    400034: Brace001
+    400036: //RootNode
+    400038: Fountain Base
+    400040: Fountain Cloth
+    400042: FruFra
+    400044: FruFra001
+    400046: Leaf
+    400048: Leaf001
+    400050: Leaf002
+    400052: Leaf003
+    400054: Leaf004
+    2300000: Bobble001
+    2300002: Bobble002
+    2300004: Bobble004
+    2300006: Bobble005
+    2300008: Bobble006
+    2300010: Bobble007
+    2300012: Bobble008
+    2300014: Bobble009
+    2300016: Bobble010
+    2300018: Bobble011
+    2300020: Bobble012
+    2300022: Bobble013
+    2300024: Bobble014
+    2300026: Bobble015
+    2300028: Bobble016
+    2300030: Bobble017
+    2300032: Brace
+    2300034: Brace001
+    2300036: Fountain Base
+    2300038: Fountain Cloth
+    2300040: FruFra
+    2300042: FruFra001
+    2300044: Leaf
+    2300046: Leaf001
+    2300048: Leaf002
+    2300050: Leaf003
+    2300052: Leaf004
+    3300000: Bobble001
+    3300002: Bobble002
+    3300004: Bobble004
+    3300006: Bobble005
+    3300008: Bobble006
+    3300010: Bobble007
+    3300012: Bobble008
+    3300014: Bobble009
+    3300016: Bobble010
+    3300018: Bobble011
+    3300020: Bobble012
+    3300022: Bobble013
+    3300024: Bobble014
+    3300026: Bobble015
+    3300028: Bobble016
+    3300030: Bobble017
+    3300032: Brace
+    3300034: Brace001
+    3300036: Fountain Base
+    3300038: Fountain Cloth
+    3300040: FruFra
+    3300042: FruFra001
+    3300044: Leaf
+    3300046: Leaf001
+    3300048: Leaf002
+    3300050: Leaf003
+    3300052: Leaf004
+    4300000: Fountain Base
+    4300002: Fountain Cloth
+    4300004: Bobble014
+    4300006: Bobble015
+    4300008: Bobble016
+    4300010: Leaf
+    4300012: Leaf001
+    4300014: Bobble017
+    4300016: Leaf002
+    4300018: Leaf003
+    4300020: Leaf004
+    4300022: Bobble001
+    4300024: Bobble002
+    4300026: Bobble004
+    4300028: Bobble005
+    4300030: Bobble006
+    4300032: Bobble007
+    4300034: Brace
+    4300036: Bobble008
+    4300038: Bobble009
+    4300040: Bobble010
+    4300042: Bobble011
+    4300044: Bobble012
+    4300046: Bobble013
+    4300048: FruFra
+    4300050: FruFra001
+    4300052: Brace001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

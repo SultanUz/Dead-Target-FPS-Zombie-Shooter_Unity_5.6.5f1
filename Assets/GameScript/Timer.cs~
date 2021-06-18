@@ -1,0 +1,131 @@
+﻿using UnityEngine;
+using System.Collections;
+using StartApp;
+
+public class Timer : MonoBehaviour
+{
+		GameObject pausewindow, successwindow, failedwindow;
+		AudioSource audioS;
+		public GameObject[] zombie;
+		public static int zombieLength;
+		RadarSystem rs;
+		GameObject txtZ, txtB, BG, pistak, ak47;
+		PlayerHealth ph;
+		FPSInputController fps;
+		private bool escape = false;
+		int counter;
+
+		void GUIHandler (bool value)
+		{
+				rs.enabled = value;
+				txtZ.gameObject.SetActive (value);
+				txtB.gameObject.SetActive (value);
+				BG.gameObject.SetActive (value);
+				pistak.gameObject.SetActive (value);
+				ak47.gameObject.SetActive (value);
+				ph.enabled = value;
+				fps.enabled = value;
+		}
+
+		public void Awake ()
+		{
+				audioS = GetComponent<AudioSource> ();
+				txtZ = GameObject.Find ("Z");
+				pistak = GameObject.Find ("Pistal");
+				ak47 = GameObject.Find ("AK47");
+				txtB = GameObject.Find ("B");
+				BG = GameObject.Find ("BulletZombieGUI");
+				rs = Object.FindObjectOfType<RadarSystem> ();
+				ph = Object.FindObjectOfType<PlayerHealth> ();
+				fps = Object.FindObjectOfType<FPSInputController> ();
+				pausewindow = GameObject.Find ("Pause");
+				failedwindow = GameObject.Find ("Failed");
+				successwindow = GameObject.Find ("Success");
+				StartAppWrapper.init ();
+				StartAppWrapper.loadAd ();
+				counter = 0;
+		}
+
+		public void Resume ()
+		{
+				audioS.PlayOneShot (audioS.clip);
+				escape = !escape;
+				GUIHandler (true);
+				Time.timeScale = 1;
+		}
+
+		public void Replay ()
+		{
+				Application.LoadLevel (Application.loadedLevel);
+				audioS.PlayOneShot (audioS.clip);
+		}
+
+		public void Next ()
+		{
+				Application.LoadLevel (Application.loadedLevel + 1);
+				audioS.PlayOneShot (audioS.clip);
+		}
+
+		public void Levels ()
+		{
+				Admob.intertialshow = true;
+				audioS.PlayOneShot (audioS.clip);
+				Application.LoadLevel (1);
+		}
+
+		public void Home ()
+		{
+				Admob.intertialshow = true;
+				audioS.PlayOneShot (audioS.clip);
+				Application.LoadLevel (0);
+		}
+
+		void  Start ()
+		{
+				failedwindow.gameObject.SetActive (false);
+				successwindow.gameObject.SetActive (false);
+				pausewindow.gameObject.SetActive (false);
+				counter = 0;
+				GUIHandler (true);
+		}
+
+		void  Update ()
+		{
+				zombieLength = zombie.Length;
+				if (Input.GetKeyDown (KeyCode.Escape)) {
+						escape = true;
+						Time.timeScale = 0;
+				} else {
+						Time.timeScale = 1;
+				}
+				zombie = GameObject.FindGameObjectsWithTag ("Enemy");
+				if (BulletsCounter.bullet_G < 0 && BulletsCounter.bullet_P < 0 && zombie.Length > 0 || PlayerHealth.health <= 0) {
+						Time.timeScale = 0;
+						if (counter < 1) {
+								Admob.intertialshow = true;
+								counter++;
+						}
+						GUIHandler (false);
+						failedwindow.gameObject.SetActive (true);
+				} else
+						failedwindow.gameObject.SetActive (false);
+				if (BulletsCounter.bullet_G >= 0 && BulletsCounter.bullet_P >= 0 && zombie.Length == 0) {
+						Time.timeScale = 0;
+						if (counter < 1) {
+								StartAppWrapper.showAd ();
+								StartAppWrapper.loadAd ();
+								counter++;
+						}
+						GUIHandler (false);
+						PlayerPrefs.SetInt (Application.loadedLevelName, 1);
+						successwindow.gameObject.SetActive (true);
+				} else
+						successwindow.gameObject.SetActive (false);
+				if (escape) {
+						Time.timeScale = 0;
+						GUIHandler (false);
+						pausewindow.gameObject.SetActive (true);
+				} else
+						pausewindow.gameObject.SetActive (false);
+		}
+}
